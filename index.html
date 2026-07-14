@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Bautizo y Primer Añito</title>
+    <style>
+        /* Estilos Generales - Tonos pasteles y elegantes */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #555;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: #ffffff;
+            margin: 30px 15px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            border: 1px solid #e2ece9;
+        }
+
+        /* Encabezado e Invitación */
+        h1 {
+            color: #b5c9c3;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            font-family: 'Georgia', serif;
+        }
+
+        h2 {
+            color: #9cbab2;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            font-family: 'Georgia', serif;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            color: #769f93;
+            font-weight: bold;
+        }
+
+        /* Sección del Video */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #eef3f1;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        /* Formulario Formspree */
+        form {
+            background-color: #f9fbfb;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+            border: 1px dashed #b5c9c3;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #666;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #9cbab2;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #769f93;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>¡Mis Momentos Especiales!</h1>
+        <p>Hay momentos en la vida que son inolvidables, y compartirlos con quienes más amamos los hace eternos. Te invito a celebrar junto a mi familia dos grandes bendiciones:</p>
+        
+        <hr style="border: 0; border-top: 1px solid #e2ece9; margin: 20px 0;">
+
+        <h2>Santo Bautizo</h2>
+        <p>Recibiré la bendición del primer sacramento el:<br>
+        <span class="highlight">Sábado, 18 de Julio de 2026</span><br>
+        Horario: 07:30 AM<br>
+        Lugar: PARROQUIA Purisima Concepcion La Guardia</p>
+
+        <h2>Mi Primer Añito</h2>
+        <p>¡celebramos mi primer añito de vida!<br>
+        <span class="highlight">Domingo, 19 de Julio de 2026</span><br>
+        Horario: 12:00 AM<br>
+        Lugar: Casa de Tio Benito</p>
+
+        <hr style="border: 0; border-top: 1px solid #e2ece9; margin: 20px 0;">
+        <h3>POSDATA APRENDERSE ESTA CANCION</h3>
+        
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/YQQ6g83MfOM" allowfullscreen></iframe>
+        </div>
+
+        <h2>Confirmar Asistencia</h2>
+        <p style="font-size: 0.95rem; color: #777;">Por favor, ayúdanos a organizar mejor el evento confirmando tu asistencia antes del 16 Julio 2026.</p>
+        
+        <form action="https://formsubmit.co/carlosmartincondobermudes@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="Nombre" placeholder="Ej. Juan Pérez" required>
+
+            <label for="asistencia">¿A qué eventos asistirás?</label>
+            <select id="asistencia" name="Asistencia_A" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="Ambos Eventos">Asistiré a Ambos Eventos (18 y 19 de Julio)</option>
+                <option value="Solo Bautizo">Solo al Bautizo (Sábado 18)</option>
+                <option value="Solo Cumpleaños">Solo al Primer Añito (Domingo 19)</option>
+                <option value="No podré asistir">Lamentablemente no podré asistir</option>
+            </select>
+
+            <label for="invitados">Número de acompañantes (incluyéndote):</label>
+            <select id="invitados" name="Total_Invitados" required>
+                <option value="1">1 Persona</option>
+                <option value="2">2 Personas</option>
+                <option value="3">3 Personas</option>
+                <option value="4">4 Personas o más</option>
+            </select>
+
+            <label for="mensaje">Mensaje o Dedicatoria (Opcional):</label>
+            <input type="text" id="mensaje" name="Mensaje_Especial" placeholder="¡Déjanos un lindo deseo!">
+
+            <button type="submit">Enviar Confirmación</button>
+        </form>
+
+        <div class="footer">
+            <p>¡Te esperamos con los brazos abiertos!</p>
+        </div>
+    </div>
+
+</body>
+</html>
